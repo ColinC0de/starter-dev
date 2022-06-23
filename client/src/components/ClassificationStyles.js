@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ClassificationContainer = styled.div`
@@ -20,7 +21,8 @@ export const Question = styled.h1`
   text-shadow: -3px -3px 5px rgb(255, 255, 255, 0.5), -1px -1px 3px rgb(255, 204, 204, 0.5), 1px 1px 3px rgba(51, 0, 0, 0.5), 3px 3px 5px rgba(51, 0, 0, 0.5);
 `;
 
-export const ClassificationCard = styled.div`
+export const ClassificationCard = styled(Link)`
+  text-decoration: none;
   width: 175px;
   height: 175px;
   border-radius: 20px;
